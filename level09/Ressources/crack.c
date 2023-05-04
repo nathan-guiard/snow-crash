@@ -5,17 +5,11 @@
 
 int main(int ac, char **argv)
 {
-		static char	str[40];
-
-		int fd = open(argv[1], O_RDONLY);
-		if (fd <= 0)
-				return (1);
-		read(fd, str, 40);
-		int i = 0;
-		while (str[i])
-		{
-				str[i] -= i;
-				i++;
-		}
-		printf("%s\n", str);
+	int i = 0;
+	while (argv[1][i])
+	{
+		argv[1][i] -= i;
+		i++;
+	}
+	printf("%s\n", argv[1]);
 }
