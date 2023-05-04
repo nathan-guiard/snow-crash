@@ -275,8 +275,21 @@ Password: quif5eloekouj29ke0vouxean
 ## Level09
 
 ```
-ls -la 
+$> ls -la
+-rwsr-sr-x 1 flag09 level09 7640 Mar  5  2016 level09
+----r--r-- 1 flag09 level09   26 Mar  5  2016 token
+$> ./level09 aaaaaaaaaaa
+abcdefgijk
+$> cat token
+f4kmm6p|=�p�n��DB�Du{��
 ```
-f3iji1ju5yuevaus41q1afiuq
+
+On s'est dit que token etait passe par `level09`. <br />
+avec le script on peut le repasser en mode normal: `f3iji1ju5yuevaus41q1afiuq`
+
+```
+$> su flag09
+Password: f3iji1ju5yuevaus41q1afiuq
+```
 
 ### Flag: `s5cAJpM8ev6XHw998pRWG728z`
